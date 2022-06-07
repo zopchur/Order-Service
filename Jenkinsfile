@@ -26,8 +26,6 @@ pipeline {
         
         stage ('create docker image') {
             steps {
-                sh 'sudo usermod -aG docker ${USER}'
-                sh 'su -s ${USER}'
                 sh 'docker build -t orderapp .'
             }
         }
