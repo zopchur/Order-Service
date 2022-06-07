@@ -26,7 +26,7 @@ pipeline {
         
         stage ('create docker image') {
             steps {
-                sh 'docker build -t orderapp .'
+                sh 'sudo docker build -t orderapp .'
             }
         }
     }
